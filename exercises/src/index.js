@@ -2,15 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
-import HelloWorld from './HelloWorld';
+// import HelloWorld from './HelloWorld';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    {/* <App /> */}
-    <HelloWorld />
-  </React.StrictMode>,
-  document.getElementById('root')
+const element = <h1>Hello, world</h1>;
+
+ReactDOM.render(element, document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
