@@ -16,3 +16,6 @@ Sat Aug 21 20:28:43 EDT 2021
 
 Trying to implement exercises at `react.js>Main Concepts` but limited success with create-react-app. Next, will research.
 
+Mon Aug 23 19:33:29 EDT 2021
+
+Experimenting with doing all exercises in Main Concepts. Setup lacking. Will follow [https://reactjs.org/tutorial/tutorial.html](https://reactjs.org/tutorial/tutorial.html) for an example of how to set up other exercises in the React docs.
