@@ -19,3 +19,7 @@ Trying to implement exercises at `react.js>Main Concepts` but limited success wi
 Mon Aug 23 19:33:29 EDT 2021
 
 Experimenting with doing all exercises in Main Concepts. Setup lacking. Will follow [https://reactjs.org/tutorial/tutorial.html](https://reactjs.org/tutorial/tutorial.html) for an example of how to set up other exercises in the React docs.
+
+Fri Aug 27 05:14:14 EDT 2021
+
+Adapting the steps from the above tut to my use, set up Hello world in a CRA called 'exercises3'.
