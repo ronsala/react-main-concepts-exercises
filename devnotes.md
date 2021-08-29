@@ -23,3 +23,8 @@ Experimenting with doing all exercises in Main Concepts. Setup lacking. Will fol
 Fri Aug 27 05:14:14 EDT 2021
 
 Adapting the steps from the above tut to my use, set up Hello world in a CRA called 'exercises3'.
+
+Sun Aug 29 07:38:33 EDT 2021
+
+Removed /exercises and /exercises2. Renamed exercises3 exercises.
+
