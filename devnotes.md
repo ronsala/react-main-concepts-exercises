@@ -30,3 +30,8 @@ Removed /exercises and /exercises2. Renamed exercises3 exercises.
 
 Thu Sep  9 04:14:39 EDT 2021
 
+Completed thru '2. Introducing JSX'.
+
+Fri Sep 10 05:20:10 EDT 2021
+
+Practicing at most glancing at the example code in the React docs, writing it out with minimal editor help, debugging as necessary, and only then looking back at the example code to fix anything. Building muscle memory for quick coding, especially in technical interviews. Keeping up with one numbered section per session.
