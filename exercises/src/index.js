@@ -100,14 +100,83 @@ import ReactDOM from 'react-dom';
 
 // Updating the Rendered Element
 
-function tick() {
-  const element = (
-    <div>
-      <h1>Hello, world!</h1>
-      <h2>It is {new Date().toLocaleTimeString()}.</h2>
-    </div>
-  );
-  ReactDOM.render(element, document.getElementById('root'))
+// function tick() {
+//   const element = (
+//     <div>
+//       <h1>Hello, world!</h1>
+//       <h2>It is {new Date().toLocaleTimeString()}.</h2>
+//     </div>
+//   );
+//   ReactDOM.render(element, document.getElementById('root'))
+// }
+
+// setInterval(tick, 1000);
+
+
+// Components and Props
+
+// function Welcome(props) {
+//   return <h1>Welcome, {props.name}</h1>
+// }
+
+// const element = <Welcome name="Sara" />;
+// ReactDOM.render(
+//   element,
+//   document.getElementById('root')
+// );
+
+// Composing Components
+
+// function Welcome(props) {
+//   return <h1>Welcome, {props.name}</h1>
+// }
+
+// function App() {
+//   return(
+//     <div>
+//       <Welcome name="Sara" />
+//       <Welcome name="Cahal" />
+//       <Welcome name="Edite" />
+//     </div>
+//   );
+// }
+
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById('root')
+// );
+
+// Extracting Components
+
+function formatDate(date) {
+  return date.getMonth() + "/" + date.getDate() + "/" + date.getFullYear()
 }
 
-setInterval(tick, 1000);
+function Comment(props) {
+  return(
+    <div className="Comment">
+      <div className="UserInfo">
+        <img className="Avatar"
+          src={props.author.avatarUrl}
+          alt={props.author.name}
+        />
+      </div>
+      <div className="UserInfo-name">
+        {props.author.name}
+      </div>
+      <div className="Comment-text">
+        {props.text}
+      </div>
+      <div className="Comment-date">
+        {formatDate(props.date)}
+      </div>
+    </div>
+  );
+}
+
+const authorObj = {'avatarUrl': 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Michael-Spavor-2010_%28cropped%29.jpg/126px-Michael-Spavor-2010_%28cropped%29.jpg', 'name': 'Ron'};
+
+ReactDOM.render(
+  <Comment author={authorObj} date={new Date()} text="This is a curious exercise." />,
+  document.getElementById('root')
+);
